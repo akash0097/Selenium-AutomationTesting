@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\THALA\AppData\Local\Temp\testng-eclipse-586600268\testng-customsuite.xml</span>
+                    <span>C:\Users\THALA\AppData\Local\Temp\testng-eclipse-429417088\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,12 +104,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.myntra.qa.testcases.HomePageTest" hash-for-method="verifyHomePageTitleTest">verifyHomePageTitleTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.myntra.qa.testcases.HomePageTest" hash-for-method="addItemsToWatchlistTest">addItemsToWatchlistTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.myntra.qa.testcases.HomePageTest" hash-for-method="verifyMensMenuDisplayedTest">verifyMensMenuDisplayedTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.myntra.qa.testcases.HomePageTest" hash-for-method="removeItemFromWatchlistTest">removeItemFromWatchlistTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -132,16 +132,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyHomePageTitleTest">
-                  </a> <!-- verifyHomePageTitleTest -->
-                  <span class="method-name">verifyHomePageTitleTest</span>
+                  <a name="addItemsToWatchlistTest">
+                  </a> <!-- addItemsToWatchlistTest -->
+                  <span class="method-name">addItemsToWatchlistTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyMensMenuDisplayedTest">
-                  </a> <!-- verifyMensMenuDisplayedTest -->
-                  <span class="method-name">verifyMensMenuDisplayedTest</span>
+                  <a name="removeItemFromWatchlistTest">
+                  </a> <!-- removeItemFromWatchlistTest -->
+                  <span class="method-name">removeItemFromWatchlistTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,7 +149,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\THALA\AppData\Local\Temp\testng-eclipse-586600268\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\THALA\AppData\Local\Temp\testng-eclipse-429417088\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -158,7 +158,12 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.myntra.qa.testcases.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.myntra.qa.testcases.HomePageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addItemsToWatchlistTest&quot;/&gt;
+          &lt;include name=&quot;removeItemFromWatchlistTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.myntra.qa.testcases.HomePageTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -200,18 +205,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyMensMenuDisplayedTest')
+data.setCell(0, 1, 'addItemsToWatchlistTest')
 data.setCell(0, 2, 'com.myntra.qa.testcases.HomePageTest')
-data.setCell(0, 3, 1111);
+data.setCell(0, 3, 43405);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyHomePageTitleTest')
+data.setCell(1, 1, 'removeItemFromWatchlistTest')
 data.setCell(1, 2, 'com.myntra.qa.testcases.HomePageTest')
-data.setCell(1, 3, 139);
+data.setCell(1, 3, 26711);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -226,9 +231,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.myntra.qa.testcases.HomePageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">fliterItemsTest</span>
+                <br/>
+                <span class="ignored-method-name">verifyHomePageTitleTest</span>
+                <br/>
+                <span class="ignored-method-name">searchItemUsingSearchBoxTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -243,24 +259,24 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyHomePageTitleTest</span>
-                <span class="method-start">43897 ms</span>
+                <span class="method-name">addItemsToWatchlistTest</span>
+                <span class="method-start">45070 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">44047 ms</span>
+                <span class="method-start">88488 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">45120 ms</span>
+                <span class="method-start">92098 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyMensMenuDisplayedTest</span>
-                <span class="method-start">72249 ms</span>
+                <span class="method-name">removeItemFromWatchlistTest</span>
+                <span class="method-start">118689 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">73366 ms</span>
+                <span class="method-start">145404 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

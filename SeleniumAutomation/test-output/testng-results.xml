@@ -1,33 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="3" total="5" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[User Logged IN]]>
+    </line>
+    <line>
+      <![CDATA[User Logged IN]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="74733" started-at="2021-06-16T16:34:29 IST" finished-at="2021-06-16T16:35:44 IST">
+  <suite name="Default suite" duration-ms="151821" started-at="2021-06-17T20:22:05 IST" finished-at="2021-06-17T20:24:37 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="74733" started-at="2021-06-16T16:34:29 IST" finished-at="2021-06-16T16:35:44 IST">
+    <test name="Default test" duration-ms="151821" started-at="2021-06-17T20:22:05 IST" finished-at="2021-06-17T20:24:37 IST">
       <class name="com.myntra.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@2db7a79b]" name="setUp" is-config="true" duration-ms="43892" started-at="2021-06-16T16:34:29 IST" finished-at="2021-06-16T16:35:13 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@8e24743]" name="setUp" is-config="true" duration-ms="45064" started-at="2021-06-17T20:22:05 IST" finished-at="2021-06-17T20:22:50 IST">
           <reporter-output>
+            <line>
+              <![CDATA[User Logged IN]]>
+            </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.myntra.qa.testcases.HomePageTest@2db7a79b]" name="verifyHomePageTitleTest" duration-ms="139" started-at="2021-06-16T16:35:13 IST" finished-at="2021-06-16T16:35:13 IST">
+        <test-method status="PASS" signature="addItemsToWatchlistTest()[pri:2, instance:com.myntra.qa.testcases.HomePageTest@8e24743]" name="addItemsToWatchlistTest" duration-ms="43405" started-at="2021-06-17T20:22:50 IST" finished-at="2021-06-17T20:23:34 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@2db7a79b]" name="closeDriver" is-config="true" duration-ms="1062" started-at="2021-06-16T16:35:13 IST" finished-at="2021-06-16T16:35:14 IST">
+        </test-method> <!-- addItemsToWatchlistTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@8e24743]" name="closeDriver" is-config="true" duration-ms="3595" started-at="2021-06-17T20:23:34 IST" finished-at="2021-06-17T20:23:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@2db7a79b]" name="setUp" is-config="true" duration-ms="27125" started-at="2021-06-16T16:35:14 IST" finished-at="2021-06-16T16:35:41 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@8e24743]" name="setUp" is-config="true" duration-ms="26591" started-at="2021-06-17T20:23:37 IST" finished-at="2021-06-17T20:24:04 IST">
           <reporter-output>
+            <line>
+              <![CDATA[User Logged IN]]>
+            </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyMensMenuDisplayedTest()[pri:2, instance:com.myntra.qa.testcases.HomePageTest@2db7a79b]" name="verifyMensMenuDisplayedTest" duration-ms="1111" started-at="2021-06-16T16:35:41 IST" finished-at="2021-06-16T16:35:42 IST">
+        <test-method status="PASS" signature="removeItemFromWatchlistTest()[pri:1, instance:com.myntra.qa.testcases.HomePageTest@8e24743]" name="removeItemFromWatchlistTest" duration-ms="26711" started-at="2021-06-17T20:24:04 IST" depends-on-methods="com.myntra.qa.testcases.HomePageTest.addItemsToWatchlistTest" finished-at="2021-06-17T20:24:31 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMensMenuDisplayedTest -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@2db7a79b]" name="closeDriver" is-config="true" duration-ms="1206" started-at="2021-06-16T16:35:42 IST" finished-at="2021-06-16T16:35:44 IST">
+        </test-method> <!-- removeItemFromWatchlistTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@8e24743]" name="closeDriver" is-config="true" duration-ms="6213" started-at="2021-06-17T20:24:31 IST" finished-at="2021-06-17T20:24:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
