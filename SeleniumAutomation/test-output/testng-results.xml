@@ -1,45 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="5" passed="2">
+<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
   <reporter-output>
     <line>
       <![CDATA[User Logged IN]]>
     </line>
-    <line>
-      <![CDATA[User Logged IN]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="151821" started-at="2021-06-17T20:22:05 IST" finished-at="2021-06-17T20:24:37 IST">
+  <suite name="Default suite" duration-ms="63847" started-at="2021-06-17T22:52:00 IST" finished-at="2021-06-17T22:53:04 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="151821" started-at="2021-06-17T20:22:05 IST" finished-at="2021-06-17T20:24:37 IST">
+    <test name="Default test" duration-ms="63847" started-at="2021-06-17T22:52:00 IST" finished-at="2021-06-17T22:53:04 IST">
       <class name="com.myntra.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@8e24743]" name="setUp" is-config="true" duration-ms="45064" started-at="2021-06-17T20:22:05 IST" finished-at="2021-06-17T20:22:50 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@5891e32e]" name="setUp" is-config="true" duration-ms="34997" started-at="2021-06-17T22:52:01 IST" finished-at="2021-06-17T22:52:36 IST">
           <reporter-output>
             <line>
               <![CDATA[User Logged IN]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addItemsToWatchlistTest()[pri:2, instance:com.myntra.qa.testcases.HomePageTest@8e24743]" name="addItemsToWatchlistTest" duration-ms="43405" started-at="2021-06-17T20:22:50 IST" finished-at="2021-06-17T20:23:34 IST">
+        <test-method status="PASS" signature="getListItemsUnderMensEvenCol()[pri:6, instance:com.myntra.qa.testcases.HomePageTest@5891e32e]" name="getListItemsUnderMensEvenCol" duration-ms="25418" started-at="2021-06-17T22:52:36 IST" finished-at="2021-06-17T22:53:01 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addItemsToWatchlistTest -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@8e24743]" name="closeDriver" is-config="true" duration-ms="3595" started-at="2021-06-17T20:23:34 IST" finished-at="2021-06-17T20:23:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@8e24743]" name="setUp" is-config="true" duration-ms="26591" started-at="2021-06-17T20:23:37 IST" finished-at="2021-06-17T20:24:04 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[User Logged IN]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="removeItemFromWatchlistTest()[pri:1, instance:com.myntra.qa.testcases.HomePageTest@8e24743]" name="removeItemFromWatchlistTest" duration-ms="26711" started-at="2021-06-17T20:24:04 IST" depends-on-methods="com.myntra.qa.testcases.HomePageTest.addItemsToWatchlistTest" finished-at="2021-06-17T20:24:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeItemFromWatchlistTest -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@8e24743]" name="closeDriver" is-config="true" duration-ms="6213" started-at="2021-06-17T20:24:31 IST" finished-at="2021-06-17T20:24:37 IST">
+        </test-method> <!-- getListItemsUnderMensEvenCol -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@5891e32e]" name="closeDriver" is-config="true" duration-ms="3096" started-at="2021-06-17T22:53:01 IST" finished-at="2021-06-17T22:53:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
