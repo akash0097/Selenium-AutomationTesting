@@ -53,10 +53,10 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//div[@id='desktopSearchResults']/div[2]/section/ul/li[1]/a")
 	WebElement firstItem;
 
-	@FindBy(xpath = "//div[@id='desktopSearchResults']/div[2]/section/ul/li[1]/div[4]/span")
+	@FindBy(xpath = "//div[@id='desktopSearchResults']/div[2]/section/ul/li[1]/div[3]")
 	WebElement watchlistBtn;
 
-	@FindBy(xpath = "//div[@id='desktopSearchResults']/div[2]/section/ul/li[1]/div[4]/span[1]")
+	@FindBy(xpath = "//div[@id='desktopSearchResults']/div[2]/section/ul/li[1]/div[3]/span")
 	WebElement watchlistedLabel;
 
 	@FindBy(xpath = "//header[@id='desktop-header-cnt']/div[2]/div[2]/a[1]/span[2]")
@@ -93,7 +93,7 @@ public class HomePage extends TestBase {
 	public void addItemToWatchList() {
 		firstItem = expilictWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='desktopSearchResults']/div[2]/section/ul/li[1]/a")));
 		Actions action = new Actions(driver);
-		action.moveToElement(firstItem).pause(10).moveToElement(watchlistBtn).click().build().perform();
+		action.moveToElement(firstItem).pause(20).moveToElement(watchlistBtn).click().build().perform();
 	}
 
 	public String getWatchlistedLabel() {

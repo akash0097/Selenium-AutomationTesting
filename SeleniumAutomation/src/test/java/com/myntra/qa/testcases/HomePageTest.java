@@ -24,22 +24,26 @@ public class HomePageTest extends TestBase {
 
 	@BeforeMethod
 	public void setUp() {
+		Reporter.log("Before Method - Open setUp");
 		initialization();
 		loginPage = new LoginPage();
 		homePage = loginPage.login(props.getProperty("username"), props.getProperty("password"));
-		Reporter.log("User Logged IN");
+		Reporter.log("Before Method - Close setUp");
 	}
 
 	@Test(priority = 1)
 	public void verifyHomePageTitleTest() {
+		Reporter.log("Test - Open verifyHomePageTitleTest");
 		implicitBreaks(50);
 		String homePageTitle = homePage.getHomePageTitle();
 		System.out.println("Actual title = " + homePageTitle);
 		Assert.assertEquals(homePageTitle, "Myntra", "Home Page title is not displayed as expected");
+		Reporter.log("Test - Close verifyHomePageTitleTest");
 	}
 
 	@Test(priority = 2)
 	public void searchItemUsingSearchBoxTest() {
+		Reporter.log("Test - Open searchItemUsingSearchBoxTest");
 		String searchByText = "Kurtas";
 		implicitBreaks(100);
 
@@ -54,11 +58,13 @@ public class HomePageTest extends TestBase {
 		homePage.clickSearchFieldBtn();
 		implicitBreaks(50);
 
-		Assert.assertEquals(homePage.getSearchedItemLabel(), "Kurtas Online");
+		Assert.assertEquals(homePage.getSearchedItemLabel(), "Kurtas Online", "Label for the searched item is not matching");
+		Reporter.log("Test - Close searchItemUsingSearchBoxTest");
 	}
 
 	@Test(priority = 3)
 	public void fliterItemsTest() {
+		Reporter.log("Test - Open fliterItemsTest");
 		String searchBy = "Roadster";
 
 		implicitBreaks(100);
@@ -76,11 +82,13 @@ public class HomePageTest extends TestBase {
 		homePage.clickBrandSearchCheckBox();
 		implicitBreaks(50);
 
-		Assert.assertEquals(homePage.getSearchedItemLabel(), "Jackets For Men");
+		Assert.assertEquals(homePage.getSearchedItemLabel(), "Jackets For Men", "Label for the filtered item is not matching");
+		Reporter.log("Test - Close fliterItemsTest");
 	}
 
 	@Test(priority = 4)
 	public void addItemsToWatchlistTest() {
+		Reporter.log("Test - Open addItemsToWatchlistTest");
 		implicitBreaks(100);
 		homePage.clickJacketsUnderMensSectionFromMenu();
 		implicitBreaks(50);
@@ -90,11 +98,12 @@ public class HomePageTest extends TestBase {
 
 		System.out.println("After wish listing = " + homePage.getWatchlistedLabel());
 		Assert.assertEquals(homePage.getWatchlistedLabel(), "WISHLISTED", "Selected item is not wish listed");
+		Reporter.log("Test - Close addItemsToWatchlistTest");
 	}
 
 	@Test(priority = 5)
 	public void removeItemFromWatchlistTest() {
-
+		Reporter.log("Test - Open removeItemFromWatchlistTest");
 		implicitBreaks(100);
 		homePage.clickWatchlistIcon();
 		implicitBreaks(50);
@@ -107,12 +116,14 @@ public class HomePageTest extends TestBase {
 		}
 
 		Assert.assertEquals(homePage.getNoWatchlistItemLabel(), "YOUR WISHLIST IS EMPTY",
-				"Item still present under wish list");
+				"Items are still present under wish list");
+		Reporter.log("Test - Close removeItemFromWatchlistTest");
 	}
 
 	// working with list
 	@Test(priority = 6)
 	public void getListItemsUnderMensEvenCol() {
+		Reporter.log("Test - Open getListItemsUnderMensEvenCol");
 		System.out.println("Displaying all the items under Mens section");
 		List<WebElement> listOfitems = homePage.getListOfItemsUnderMens();
 		
@@ -122,11 +133,13 @@ public class HomePageTest extends TestBase {
 				System.out.println("Mens items = " + webElement.getText());
 			}
 		}
+		Reporter.log("Test - Close getListItemsUnderMensEvenCol");
 	}
 
 	@AfterMethod
 	public void closeDriver() {
-		homePage.logoutUser();
+		Reporter.log("After Method - Open closedDriver");
 		driver.quit();
+		Reporter.log("After Method - Close closeDriver");
 	}
 }
