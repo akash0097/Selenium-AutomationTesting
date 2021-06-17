@@ -1,5 +1,7 @@
 package com.myntra.qa.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -69,6 +71,10 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//header[@id='desktop-header-cnt']/div[2]/div[2]/div/div[2]/div[2]/div[2]/div[3]/div/div")
 	WebElement logoutBtn;
 
+	//working with list
+	@FindBy(xpath = "//div[@data-group = 'men']/li/ul/li/a")
+	List<WebElement> listOfItermsUnderMens;
+	
 	// Initializing Page objects
 	public HomePage() {
 		PageFactory.initElements(driver, this);
@@ -156,4 +162,11 @@ public class HomePage extends TestBase {
 		Actions action = new Actions(driver);
 		action.moveToElement(profileIcon).moveToElement(logoutBtn).click().build().perform();
 	}
+	
+	public List<WebElement> getListOfItemsUnderMens() {
+		Actions action = new Actions(driver);
+		action.moveToElement(menMenuSection).build().perform();
+		return listOfItermsUnderMens;
+	}
+	
 }

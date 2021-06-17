@@ -1,5 +1,8 @@
 package com.myntra.qa.testcases;
 
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -89,7 +92,7 @@ public class HomePageTest extends TestBase {
 		Assert.assertEquals(homePage.getWatchlistedLabel(), "WISHLISTED", "Selected item is not wish listed");
 	}
 
-	@Test(priority = 5 )
+	@Test(priority = 5)
 	public void removeItemFromWatchlistTest() {
 
 		implicitBreaks(100);
@@ -99,10 +102,26 @@ public class HomePageTest extends TestBase {
 		if ((homePage.getNoWatchlistItemLabel().contains("My Wishlist"))) {
 			homePage.clickRemoveItemfromWatchlistBtn();
 			implicitBreaks(50);
-		}else {System.out.println("watchlist label = " + homePage.getNoWatchlistItemLabel());}
-		
+		} else {
+			System.out.println("watchlist label = " + homePage.getNoWatchlistItemLabel());
+		}
+
 		Assert.assertEquals(homePage.getNoWatchlistItemLabel(), "YOUR WISHLIST IS EMPTY",
 				"Item still present under wish list");
+	}
+
+	// working with list
+	@Test(priority = 6)
+	public void getListItemsUnderMensEvenCol() {
+		System.out.println("Displaying all the items under Mens section");
+		List<WebElement> listOfitems = homePage.getListOfItemsUnderMens();
+		
+		System.out.println("***List Of "+ listOfitems.size() +" Items Under Mens Section ***");
+		if (listOfitems != null) {
+			for (WebElement webElement : listOfitems) {
+				System.out.println("Mens items = " + webElement.getText());
+			}
+		}
 	}
 
 	@AfterMethod
