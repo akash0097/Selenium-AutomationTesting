@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
   <reporter-output>
     <line>
       <![CDATA[Before Method - Open setUp]]>
@@ -8,136 +8,10 @@
       <![CDATA[Before Method - Close setUp]]>
     </line>
     <line>
-      <![CDATA[Test - Open verifyHomePageTitleTest]]>
+      <![CDATA[Test - Open verifyLoggedInUserMobileNumber]]>
     </line>
     <line>
-      <![CDATA[Test - Close verifyHomePageTitleTest]]>
-    </line>
-    <line>
-      <![CDATA[After Method - Open closedDriver]]>
-    </line>
-    <line>
-      <![CDATA[After Method - Close closeDriver]]>
-    </line>
-    <line>
-      <![CDATA[Before Method - Open setUp]]>
-    </line>
-    <line>
-      <![CDATA[Before Method - Close setUp]]>
-    </line>
-    <line>
-      <![CDATA[Test - Open searchItemUsingSearchBoxTest]]>
-    </line>
-    <line>
-      <![CDATA[Test - Close searchItemUsingSearchBoxTest]]>
-    </line>
-    <line>
-      <![CDATA[After Method - Open closedDriver]]>
-    </line>
-    <line>
-      <![CDATA[After Method - Close closeDriver]]>
-    </line>
-    <line>
-      <![CDATA[Before Method - Open setUp]]>
-    </line>
-    <line>
-      <![CDATA[Before Method - Close setUp]]>
-    </line>
-    <line>
-      <![CDATA[Test - Open fliterItemsTest]]>
-    </line>
-    <line>
-      <![CDATA[Test - Close fliterItemsTest]]>
-    </line>
-    <line>
-      <![CDATA[After Method - Open closedDriver]]>
-    </line>
-    <line>
-      <![CDATA[After Method - Close closeDriver]]>
-    </line>
-    <line>
-      <![CDATA[Before Method - Open setUp]]>
-    </line>
-    <line>
-      <![CDATA[Before Method - Close setUp]]>
-    </line>
-    <line>
-      <![CDATA[Test - Open addItemsToWatchlistTest]]>
-    </line>
-    <line>
-      <![CDATA[Test - Close addItemsToWatchlistTest]]>
-    </line>
-    <line>
-      <![CDATA[After Method - Open closedDriver]]>
-    </line>
-    <line>
-      <![CDATA[After Method - Close closeDriver]]>
-    </line>
-    <line>
-      <![CDATA[Before Method - Open setUp]]>
-    </line>
-    <line>
-      <![CDATA[Before Method - Close setUp]]>
-    </line>
-    <line>
-      <![CDATA[Test - Open removeItemFromWatchlistTest]]>
-    </line>
-    <line>
-      <![CDATA[Test - Close removeItemFromWatchlistTest]]>
-    </line>
-    <line>
-      <![CDATA[After Method - Open closedDriver]]>
-    </line>
-    <line>
-      <![CDATA[After Method - Close closeDriver]]>
-    </line>
-    <line>
-      <![CDATA[Before Method - Open setUp]]>
-    </line>
-    <line>
-      <![CDATA[Before Method - Close setUp]]>
-    </line>
-    <line>
-      <![CDATA[Test - Open getListItemsUnderMensEvenCol]]>
-    </line>
-    <line>
-      <![CDATA[Test - Close getListItemsUnderMensEvenCol]]>
-    </line>
-    <line>
-      <![CDATA[After Method - Open closedDriver]]>
-    </line>
-    <line>
-      <![CDATA[After Method - Close closeDriver]]>
-    </line>
-    <line>
-      <![CDATA[Before Method - Open setUp]]>
-    </line>
-    <line>
-      <![CDATA[Befgore Method - Close setUp]]>
-    </line>
-    <line>
-      <![CDATA[Test - Open verifyLoginPageTitleTest]]>
-    </line>
-    <line>
-      <![CDATA[Test - close verifyLoginPageTitleTest]]>
-    </line>
-    <line>
-      <![CDATA[After Method - Open closedDriver]]>
-    </line>
-    <line>
-      <![CDATA[After Method - Close closeDriver]]>
-    </line>
-    <line>
-      <![CDATA[Before Method - Open setUp]]>
-    </line>
-    <line>
-      <![CDATA[Befgore Method - Close setUp]]>
-    </line>
-    <line>
-      <![CDATA[Test - Open loginUserTest]]>
-    </line>
-    <line>
-      <![CDATA[Test - Close loginUserTest]]>
+      <![CDATA[test - Close verifyLoggedInUserMobileNumber]]>
     </line>
     <line>
       <![CDATA[After Method - Open closedDriver]]>
@@ -146,12 +20,12 @@
       <![CDATA[After Method - Close closeDriver]]>
     </line>
   </reporter-output>
-  <suite name="Myntra Suite" duration-ms="326993" started-at="2021-06-17T23:53:22 IST" finished-at="2021-06-17T23:58:49 IST">
+  <suite name="Default suite" duration-ms="82249" started-at="2021-06-20T18:05:54 IST" finished-at="2021-06-20T18:07:16 IST">
     <groups>
     </groups>
-    <test name="MyntraTest" duration-ms="326993" started-at="2021-06-17T23:53:22 IST" finished-at="2021-06-17T23:58:49 IST">
+    <test name="Default test" duration-ms="82249" started-at="2021-06-20T18:05:54 IST" finished-at="2021-06-20T18:07:16 IST">
       <class name="com.myntra.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="setUp" is-config="true" duration-ms="24998" started-at="2021-06-17T23:53:22 IST" finished-at="2021-06-17T23:53:47 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@5891e32e]" name="setUp" is-config="true" duration-ms="51295" started-at="2021-06-20T18:05:54 IST" finished-at="2021-06-20T18:06:45 IST">
           <reporter-output>
             <line>
               <![CDATA[Before Method - Open setUp]]>
@@ -161,167 +35,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="verifyHomePageTitleTest" duration-ms="248" started-at="2021-06-17T23:53:47 IST" finished-at="2021-06-17T23:53:47 IST">
+        <test-method status="PASS" signature="verifyLoggedInUserMobileNumber()[pri:2, instance:com.myntra.qa.testcases.HomePageTest@5891e32e]" name="verifyLoggedInUserMobileNumber" duration-ms="29339" started-at="2021-06-20T18:06:45 IST" finished-at="2021-06-20T18:07:15 IST">
           <reporter-output>
             <line>
-              <![CDATA[Test - Open verifyHomePageTitleTest]]>
+              <![CDATA[Test - Open verifyLoggedInUserMobileNumber]]>
             </line>
             <line>
-              <![CDATA[Test - Close verifyHomePageTitleTest]]>
+              <![CDATA[test - Close verifyLoggedInUserMobileNumber]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="closeDriver" is-config="true" duration-ms="1079" started-at="2021-06-17T23:53:47 IST" finished-at="2021-06-17T23:53:49 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[After Method - Open closedDriver]]>
-            </line>
-            <line>
-              <![CDATA[After Method - Close closeDriver]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="setUp" is-config="true" duration-ms="19648" started-at="2021-06-17T23:53:49 IST" finished-at="2021-06-17T23:54:08 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Before Method - Open setUp]]>
-            </line>
-            <line>
-              <![CDATA[Before Method - Close setUp]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchItemUsingSearchBoxTest()[pri:2, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="searchItemUsingSearchBoxTest" duration-ms="35318" started-at="2021-06-17T23:54:08 IST" finished-at="2021-06-17T23:54:43 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Test - Open searchItemUsingSearchBoxTest]]>
-            </line>
-            <line>
-              <![CDATA[Test - Close searchItemUsingSearchBoxTest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- searchItemUsingSearchBoxTest -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="closeDriver" is-config="true" duration-ms="1168" started-at="2021-06-17T23:54:43 IST" finished-at="2021-06-17T23:54:45 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[After Method - Open closedDriver]]>
-            </line>
-            <line>
-              <![CDATA[After Method - Close closeDriver]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="setUp" is-config="true" duration-ms="21376" started-at="2021-06-17T23:54:45 IST" finished-at="2021-06-17T23:55:06 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Before Method - Open setUp]]>
-            </line>
-            <line>
-              <![CDATA[Before Method - Close setUp]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="fliterItemsTest()[pri:3, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="fliterItemsTest" duration-ms="41569" started-at="2021-06-17T23:55:06 IST" finished-at="2021-06-17T23:55:48 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Test - Open fliterItemsTest]]>
-            </line>
-            <line>
-              <![CDATA[Test - Close fliterItemsTest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- fliterItemsTest -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="closeDriver" is-config="true" duration-ms="1273" started-at="2021-06-17T23:55:48 IST" finished-at="2021-06-17T23:55:49 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[After Method - Open closedDriver]]>
-            </line>
-            <line>
-              <![CDATA[After Method - Close closeDriver]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="setUp" is-config="true" duration-ms="19617" started-at="2021-06-17T23:55:49 IST" finished-at="2021-06-17T23:56:09 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Before Method - Open setUp]]>
-            </line>
-            <line>
-              <![CDATA[Before Method - Close setUp]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addItemsToWatchlistTest()[pri:4, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="addItemsToWatchlistTest" duration-ms="35983" started-at="2021-06-17T23:56:09 IST" finished-at="2021-06-17T23:56:45 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Test - Open addItemsToWatchlistTest]]>
-            </line>
-            <line>
-              <![CDATA[Test - Close addItemsToWatchlistTest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- addItemsToWatchlistTest -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="closeDriver" is-config="true" duration-ms="1331" started-at="2021-06-17T23:56:45 IST" finished-at="2021-06-17T23:56:46 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[After Method - Open closedDriver]]>
-            </line>
-            <line>
-              <![CDATA[After Method - Close closeDriver]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="setUp" is-config="true" duration-ms="19697" started-at="2021-06-17T23:56:46 IST" finished-at="2021-06-17T23:57:06 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Before Method - Open setUp]]>
-            </line>
-            <line>
-              <![CDATA[Before Method - Close setUp]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="removeItemFromWatchlistTest()[pri:5, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="removeItemFromWatchlistTest" duration-ms="21844" started-at="2021-06-17T23:57:06 IST" finished-at="2021-06-17T23:57:27 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Test - Open removeItemFromWatchlistTest]]>
-            </line>
-            <line>
-              <![CDATA[Test - Close removeItemFromWatchlistTest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- removeItemFromWatchlistTest -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="closeDriver" is-config="true" duration-ms="1586" started-at="2021-06-17T23:57:27 IST" finished-at="2021-06-17T23:57:29 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[After Method - Open closedDriver]]>
-            </line>
-            <line>
-              <![CDATA[After Method - Close closeDriver]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="setUp" is-config="true" duration-ms="21434" started-at="2021-06-17T23:57:29 IST" finished-at="2021-06-17T23:57:50 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Before Method - Open setUp]]>
-            </line>
-            <line>
-              <![CDATA[Before Method - Close setUp]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getListItemsUnderMensEvenCol()[pri:6, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="getListItemsUnderMensEvenCol" duration-ms="20900" started-at="2021-06-17T23:57:50 IST" finished-at="2021-06-17T23:58:11 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Test - Open getListItemsUnderMensEvenCol]]>
-            </line>
-            <line>
-              <![CDATA[Test - Close getListItemsUnderMensEvenCol]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- getListItemsUnderMensEvenCol -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@64f6106c]" name="closeDriver" is-config="true" duration-ms="1093" started-at="2021-06-17T23:58:11 IST" finished-at="2021-06-17T23:58:12 IST">
+        </test-method> <!-- verifyLoggedInUserMobileNumber -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@5891e32e]" name="closeDriver" is-config="true" duration-ms="1440" started-at="2021-06-20T18:07:15 IST" finished-at="2021-06-20T18:07:16 IST">
           <reporter-output>
             <line>
               <![CDATA[After Method - Open closedDriver]]>
@@ -332,68 +56,6 @@
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- com.myntra.qa.testcases.HomePageTest -->
-      <class name="com.myntra.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.LoginPageTest@6eceb130]" name="setUp" is-config="true" duration-ms="15370" started-at="2021-06-17T23:58:12 IST" finished-at="2021-06-17T23:58:28 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Before Method - Open setUp]]>
-            </line>
-            <line>
-              <![CDATA[Befgore Method - Close setUp]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.myntra.qa.testcases.LoginPageTest@6eceb130]" name="verifyLoginPageTitleTest" duration-ms="288" started-at="2021-06-17T23:58:28 IST" finished-at="2021-06-17T23:58:28 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Test - Open verifyLoginPageTitleTest]]>
-            </line>
-            <line>
-              <![CDATA[Test - close verifyLoginPageTitleTest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.LoginPageTest@6eceb130]" name="closeDriver" is-config="true" duration-ms="1314" started-at="2021-06-17T23:58:28 IST" finished-at="2021-06-17T23:58:29 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[After Method - Open closedDriver]]>
-            </line>
-            <line>
-              <![CDATA[After Method - Close closeDriver]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.LoginPageTest@6eceb130]" name="setUp" is-config="true" duration-ms="14232" started-at="2021-06-17T23:58:29 IST" finished-at="2021-06-17T23:58:44 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Before Method - Open setUp]]>
-            </line>
-            <line>
-              <![CDATA[Befgore Method - Close setUp]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginUserTest()[pri:2, instance:com.myntra.qa.testcases.LoginPageTest@6eceb130]" name="loginUserTest" duration-ms="4261" started-at="2021-06-17T23:58:44 IST" finished-at="2021-06-17T23:58:48 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Test - Open loginUserTest]]>
-            </line>
-            <line>
-              <![CDATA[Test - Close loginUserTest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginUserTest -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.LoginPageTest@6eceb130]" name="closeDriver" is-config="true" duration-ms="1028" started-at="2021-06-17T23:58:48 IST" finished-at="2021-06-17T23:58:49 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[After Method - Open closedDriver]]>
-            </line>
-            <line>
-              <![CDATA[After Method - Close closeDriver]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- com.myntra.qa.testcases.LoginPageTest -->
-    </test> <!-- MyntraTest -->
-  </suite> <!-- Myntra Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

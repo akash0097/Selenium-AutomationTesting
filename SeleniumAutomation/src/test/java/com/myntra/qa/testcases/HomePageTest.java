@@ -42,13 +42,20 @@ public class HomePageTest extends TestBase {
 	}
 
 	@Test(priority = 2)
+	public void verifyLoggedInUserMobileNumber() {
+		Reporter.log("Test - Open verifyLoggedInUserMobileNumber");
+		String loggedInUserMobileNumber = homePage.getUserMobileNumber();
+		implicitBreaks(30);
+		System.out.println("Logged in user mobile number = " + loggedInUserMobileNumber);
+		Assert.assertEquals(loggedInUserMobileNumber, "8286515987", "Logged in user is different");
+		Reporter.log("test - Close verifyLoggedInUserMobileNumber");
+	}
+
+	@Test(priority = 3)
 	public void searchItemUsingSearchBoxTest() {
 		Reporter.log("Test - Open searchItemUsingSearchBoxTest");
 		String searchByText = "Kurtas";
 		implicitBreaks(100);
-
-		System.out.println("Page loadeded");
-
 		homePage.clicksearchTextfield();
 		implicitBreaks(10);
 
@@ -58,16 +65,17 @@ public class HomePageTest extends TestBase {
 		homePage.clickSearchFieldBtn();
 		implicitBreaks(50);
 
-		Assert.assertEquals(homePage.getSearchedItemLabel(), "Kurtas Online", "Label for the searched item is not matching");
+		Assert.assertEquals(homePage.getSearchedItemLabel(), "Kurtas Online",
+				"Label for the searched item is not matching");
 		Reporter.log("Test - Close searchItemUsingSearchBoxTest");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void fliterItemsTest() {
 		Reporter.log("Test - Open fliterItemsTest");
 		String searchBy = "Roadster";
 
-		implicitBreaks(100);
+		implicitBreaks(30);
 		homePage.clickJacketsUnderMensSectionFromMenu();
 		implicitBreaks(50);
 
@@ -82,14 +90,15 @@ public class HomePageTest extends TestBase {
 		homePage.clickBrandSearchCheckBox();
 		implicitBreaks(50);
 
-		Assert.assertEquals(homePage.getSearchedItemLabel(), "Jackets For Men", "Label for the filtered item is not matching");
+		Assert.assertEquals(homePage.getSearchedItemLabel(), "Jackets For Men",
+				"Label for the filtered item is not matching");
 		Reporter.log("Test - Close fliterItemsTest");
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void addItemsToWatchlistTest() {
 		Reporter.log("Test - Open addItemsToWatchlistTest");
-		implicitBreaks(100);
+		implicitBreaks(30);
 		homePage.clickJacketsUnderMensSectionFromMenu();
 		implicitBreaks(50);
 
@@ -101,10 +110,10 @@ public class HomePageTest extends TestBase {
 		Reporter.log("Test - Close addItemsToWatchlistTest");
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 6)
 	public void removeItemFromWatchlistTest() {
 		Reporter.log("Test - Open removeItemFromWatchlistTest");
-		implicitBreaks(100);
+		implicitBreaks(30);
 		homePage.clickWatchlistIcon();
 		implicitBreaks(50);
 
@@ -121,13 +130,13 @@ public class HomePageTest extends TestBase {
 	}
 
 	// working with list
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void getListItemsUnderMensEvenCol() {
 		Reporter.log("Test - Open getListItemsUnderMensEvenCol");
 		System.out.println("Displaying all the items under Mens section");
 		List<WebElement> listOfitems = homePage.getListOfItemsUnderMens();
-		
-		System.out.println("***List Of "+ listOfitems.size() +" Items Under Mens Section ***");
+
+		System.out.println("***List Of " + listOfitems.size() + " Items Under Mens Section ***");
 		if (listOfitems != null) {
 			for (WebElement webElement : listOfitems) {
 				System.out.println("Mens items = " + webElement.getText());

@@ -5,6 +5,7 @@
 		<classes>
 			<class name="com.myntra.qa.testcases.LoginPageTest" />
 			<class name="com.myntra.qa.testcases.HomePageTest" />
+			<class name="com.myntra.qa.testcases.ProductPageTest" />
 		</classes>
 	</test> <!-- MyntraTest -->
 </suite> <!-- Myntra Suite -->

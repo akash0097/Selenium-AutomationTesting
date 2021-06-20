@@ -3,6 +3,7 @@ package com.myntra.qa.base;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -37,7 +38,16 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 
 		driver.get(props.getProperty("url"));
-
+	}
+	
+	public void switchToWindow() {
+		String currentWindowHandler = driver.getWindowHandle();
+		Set<String> allWindowHandlers = driver.getWindowHandles();
+		 for (String windowHandler : allWindowHandlers) {
+			if(windowHandler != currentWindowHandler ) {
+				driver.switchTo().window(windowHandler);
+			}
+		}
 	}
 	
 	public static void implicitBreaks(long sec) {

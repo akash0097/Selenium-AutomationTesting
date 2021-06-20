@@ -163,10 +163,22 @@ public class HomePage extends TestBase {
 		action.moveToElement(profileIcon).moveToElement(logoutBtn).click().build().perform();
 	}
 	
+	public String getUserMobileNumber() {
+		profileIcon = expilictWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Profile')]")));
+		Actions action = new Actions(driver);
+		action.moveToElement(profileIcon).build().perform();
+		return loggedInMobiNo.getText();
+	}
+	
 	public List<WebElement> getListOfItemsUnderMens() {
 		Actions action = new Actions(driver);
 		action.moveToElement(menMenuSection).build().perform();
 		return listOfItermsUnderMens;
+	}
+	
+	public ProductPage clickOnProduct() {
+		firstItem.click();
+		return new ProductPage();
 	}
 	
 }
