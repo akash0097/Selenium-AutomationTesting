@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -16,6 +15,21 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 
 	<dependencies>
 		<dependency>
@@ -38,37 +52,34 @@
 			<version>5.0.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi-ooxml</artifactId>
-    <version>5.0.0</version>
-</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.0.0</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi-ooxml-schemas</artifactId>
-    <version>4.1.2</version>
-</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>4.1.2</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad -->
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi-scratchpad</artifactId>
-    <version>5.0.0</version>
-</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-scratchpad</artifactId>
+			<version>5.0.0</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/ooxml-schemas -->
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>ooxml-schemas</artifactId>
-    <version>1.4</version>
-</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>ooxml-schemas</artifactId>
+			<version>1.4</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/openxml4j -->
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>openxml4j</artifactId>
-    <version>1.0-beta</version>
-</dependency>
-		
-
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>openxml4j</artifactId>
+			<version>1.0-beta</version>
+		</dependency>
 	</dependencies>
-
 </project>

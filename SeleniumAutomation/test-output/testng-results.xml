@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
   <reporter-output>
     <line>
       <![CDATA[Before Method - Open setUp]]>
@@ -8,10 +8,10 @@
       <![CDATA[Before Method - Close setUp]]>
     </line>
     <line>
-      <![CDATA[Test - Open verifyLoggedInUserMobileNumber]]>
+      <![CDATA[Test - Open verifyProductDescriptionTest]]>
     </line>
     <line>
-      <![CDATA[test - Close verifyLoggedInUserMobileNumber]]>
+      <![CDATA[Test - Close verifyProductDescriptionTest]]>
     </line>
     <line>
       <![CDATA[After Method - Open closedDriver]]>
@@ -20,12 +20,12 @@
       <![CDATA[After Method - Close closeDriver]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="82249" started-at="2021-06-20T18:05:54 IST" finished-at="2021-06-20T18:07:16 IST">
+  <suite name="Default suite" duration-ms="171777" started-at="2021-06-20T18:50:35 IST" finished-at="2021-06-20T18:53:27 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="82249" started-at="2021-06-20T18:05:54 IST" finished-at="2021-06-20T18:07:16 IST">
-      <class name="com.myntra.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@5891e32e]" name="setUp" is-config="true" duration-ms="51295" started-at="2021-06-20T18:05:54 IST" finished-at="2021-06-20T18:06:45 IST">
+    <test name="Default test" duration-ms="171777" started-at="2021-06-20T18:50:35 IST" finished-at="2021-06-20T18:53:27 IST">
+      <class name="com.myntra.qa.testcases.ProductPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.myntra.qa.testcases.ProductPageTest@8e24743]" name="setUp" is-config="true" duration-ms="131804" started-at="2021-06-20T18:50:35 IST" finished-at="2021-06-20T18:52:47 IST">
           <reporter-output>
             <line>
               <![CDATA[Before Method - Open setUp]]>
@@ -35,17 +35,17 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoggedInUserMobileNumber()[pri:2, instance:com.myntra.qa.testcases.HomePageTest@5891e32e]" name="verifyLoggedInUserMobileNumber" duration-ms="29339" started-at="2021-06-20T18:06:45 IST" finished-at="2021-06-20T18:07:15 IST">
+        <test-method status="PASS" signature="verifyProductDescriptionTest()[pri:2, instance:com.myntra.qa.testcases.ProductPageTest@8e24743]" name="verifyProductDescriptionTest" duration-ms="36427" started-at="2021-06-20T18:52:47 IST" finished-at="2021-06-20T18:53:24 IST">
           <reporter-output>
             <line>
-              <![CDATA[Test - Open verifyLoggedInUserMobileNumber]]>
+              <![CDATA[Test - Open verifyProductDescriptionTest]]>
             </line>
             <line>
-              <![CDATA[test - Close verifyLoggedInUserMobileNumber]]>
+              <![CDATA[Test - Close verifyProductDescriptionTest]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifyLoggedInUserMobileNumber -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.HomePageTest@5891e32e]" name="closeDriver" is-config="true" duration-ms="1440" started-at="2021-06-20T18:07:15 IST" finished-at="2021-06-20T18:07:16 IST">
+        </test-method> <!-- verifyProductDescriptionTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.myntra.qa.testcases.ProductPageTest@8e24743]" name="closeDriver" is-config="true" duration-ms="3307" started-at="2021-06-20T18:53:24 IST" finished-at="2021-06-20T18:53:27 IST">
           <reporter-output>
             <line>
               <![CDATA[After Method - Open closedDriver]]>
@@ -55,7 +55,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- com.myntra.qa.testcases.HomePageTest -->
+      </class> <!-- com.myntra.qa.testcases.ProductPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
