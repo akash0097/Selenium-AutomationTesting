@@ -28,6 +28,7 @@ public class TestBase {
 
 	public static void initialization() {
 		// To get the name of browser
+		System.out.println("**Open initialization**");
 		String browserName = props.getProperty("browser");
 		System.out.println("Browser User = " + browserName + " URL = " + props.getProperty("url"));
 
@@ -38,6 +39,7 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 
 		driver.get(props.getProperty("url"));
+		System.out.println("**Close initialization**");
 	}
 	
 	public void switchToWindow() {

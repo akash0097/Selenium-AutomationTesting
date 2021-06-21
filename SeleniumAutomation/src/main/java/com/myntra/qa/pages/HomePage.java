@@ -149,11 +149,11 @@ public class HomePage extends TestBase {
 	}
 
 	public void clickRemoveItemfromWatchlistBtn() {
-		
 		removeWatchlistedItemBtn.click();
 	}
 
 	public String getNoWatchlistItemLabel() {
+		noWatchlistItemLabel = expilictWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='mountRoot']/div/div/div/div/div/div[1]")));
 		return noWatchlistItemLabel.getText();
 	}
 
