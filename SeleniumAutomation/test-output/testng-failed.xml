@@ -5,8 +5,8 @@
     <classes>
       <class name="com.myntra.qa.testcases.HomePageTest">
         <methods>
-          <include name="addItemsToWatchlistTest"/>
           <include name="closeDriver"/>
+          <include name="removeItemFromWatchlistTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.myntra.qa.testcases.HomePageTest -->
