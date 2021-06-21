@@ -74,7 +74,7 @@ public class LoginPage extends TestBase {
 		
 		long randomNumber = (long) (Math.random()*(max-min+1)+min);
 		String randomMobi = String.valueOf(randomNumber);
-		
+		implicitBreaks(30);
 		mobiNoField.sendKeys(randomMobi);
 		continueBtn.click();
 		implicitBreaks(30);
