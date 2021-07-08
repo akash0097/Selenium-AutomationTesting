@@ -8,11 +8,69 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">111,157</td><td></td><td></td></tr>
+<tr><th colspan="8">Myntra Suite</th></tr>
+<tr><td><a href="#t0">MyntraTest</a></td><td class="num">6</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">538,386</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.myntra.qa.testcases.ProductPageTest</td><td><a href="#m0">verifyListOfCustomerReviews</a></td><td rowspan="1">1624253917468</td><td rowspan="1">27801</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Myntra Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MyntraTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.myntra.qa.testcases.HomePageTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1624273440336</td><td rowspan="1">53389</td></tr><tr><th colspan="4">MyntraTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.myntra.qa.testcases.HomePageTest</td><td><a href="#m1">closeDriver</a></td><td rowspan="1">1624273493798</td><td rowspan="1">-1624273493798</td></tr><tr><th colspan="4">MyntraTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.myntra.qa.testcases.HomePageTest</td><td><a href="#m2">getListItemsUnderMensEvenCol</a></td><td rowspan="1">1624273493762</td><td rowspan="1">0</td></tr><tr><th colspan="4">MyntraTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.myntra.qa.testcases.HomePageTest</td><td><a href="#m3">addItemsToWatchlistTest</a></td><td rowspan="1">1624273313339</td><td rowspan="1">58746</td></tr><tr class="passedeven"><td><a href="#m4">fliterItemsTest</a></td><td rowspan="1">1624273207323</td><td rowspan="1">62380</td></tr><tr class="passedeven"><td><a href="#m5">removeItemFromWatchlistTest</a></td><td rowspan="1">1624273408856</td><td rowspan="1">28070</td></tr><tr class="passedeven"><td><a href="#m6">searchItemUsingSearchBoxTest</a></td><td rowspan="1">1624273121177</td><td rowspan="1">41099</td></tr><tr class="passedeven"><td><a href="#m7">verifyHomePageTitleTest</a></td><td rowspan="1">1624273002961</td><td rowspan="1">687</td></tr><tr class="passedeven"><td><a href="#m8">verifyLoggedInUserMobileNumber</a></td><td rowspan="1">1624273051728</td><td rowspan="1">26297</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.myntra.qa.testcases.ProductPageTest#verifyListOfCustomerReviews</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test - Open verifyListOfCustomerReviews<br/>Test - Close verifyListOfCustomerReviews</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>MyntraTest</h2><h3 id="m0">com.myntra.qa.testcases.HomePageTest#setUp</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Before Method - Open setUp</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&quot;reactPageContent&quot;]/div/div[3]/span&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;THALA-PC&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\THALA\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56689}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 04bd8124aa858d3d57a091eb9c1203be
+*** Element info: {Using=xpath, value=//div[@id=&quot;reactPageContent&quot;]/div/div[3]/span}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.myntra.qa.pages.LoginPage.login(LoginPage.java:82)
+	at com.myntra.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.myntra.qa.testcases.HomePageTest#closeDriver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.myntra.qa.testcases.HomePageTest#getListItemsUnderMensEvenCol</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&quot;reactPageContent&quot;]/div/div[3]/span&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;THALA-PC&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\THALA\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56689}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 04bd8124aa858d3d57a091eb9c1203be
+*** Element info: {Using=xpath, value=//div[@id=&quot;reactPageContent&quot;]/div/div[3]/span}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.myntra.qa.pages.LoginPage.login(LoginPage.java:82)
+	at com.myntra.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.myntra.qa.testcases.HomePageTest#addItemsToWatchlistTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test - Open addItemsToWatchlistTest<br/>Test - Close addItemsToWatchlistTest</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.myntra.qa.testcases.HomePageTest#fliterItemsTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test - Open fliterItemsTest<br/>Test - Close fliterItemsTest</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.myntra.qa.testcases.HomePageTest#removeItemFromWatchlistTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test - Open removeItemFromWatchlistTest<br/>Test - Close removeItemFromWatchlistTest</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.myntra.qa.testcases.HomePageTest#searchItemUsingSearchBoxTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test - Open searchItemUsingSearchBoxTest<br/>Test - Close searchItemUsingSearchBoxTest</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.myntra.qa.testcases.HomePageTest#verifyHomePageTitleTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test - Open verifyHomePageTitleTest<br/>Test - Close verifyHomePageTitleTest</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.myntra.qa.testcases.HomePageTest#verifyLoggedInUserMobileNumber</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test - Open verifyLoggedInUserMobileNumber<br/>test - Close verifyLoggedInUserMobileNumber</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
